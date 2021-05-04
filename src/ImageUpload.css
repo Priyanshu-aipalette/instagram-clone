@@ -1,0 +1,33 @@
+.imageupload {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  /* border-top: 1px; */
+  position: static;
+}
+.imageupload-progress {
+  margin: 10px;
+  width: 90%;
+}
+.imageupload-caption {
+  margin: 0 10px;
+  word-wrap: break-word;
+}
+.imageupload-file {
+  margin: 10px;
+  border: 1px white dashed;
+  padding: 20px;
+  cursor: auto;
+}
+#imageupload-button {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .imageupload {
+    width: 70vw;
+  }
+}

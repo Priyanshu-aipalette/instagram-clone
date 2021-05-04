@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+}
+.app {
+  background-color: #fafafa;
+}
+.app_posts {
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.app_header {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+}
+.app_headerImage {
+  height: 40px;
+  object-fit: contain;
+}
+.app-signup {
+  display: flex;
+  flex-direction: column;
+}
+.app_flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(246 246 246);
+}
+
+.right_flex {
+  color: white;
+  margin: 20px;
+  width: 25vw;
+  min-width: 250px;
+  /* background-color: white; */
+  z-index: 10;
+  border-radius: 10px;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.profile {
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 60%; */
+}
+.profile_avatar {
+  margin: 10px;
+  margin-left: 30px;
+}
+#profile_avatar {
+  background-color: #ff001a;
+}
+.post_heading {
+  text-align: center;
+  margin: 20px 0;
+}
+.login_details {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .app_flex {
+    flex-direction: column-reverse;
+  }
+
+  .right_flex {
+    width: 80vw;
+  }
+}
