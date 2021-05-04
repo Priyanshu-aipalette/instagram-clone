@@ -23,7 +23,7 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
-    width: 400,
+    width: 350,
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
     boxShadow: theme.shadows[5],
@@ -50,7 +50,6 @@ function App() {
         setUser(authUser);
         if (authUser.displayName) {
           //don't update username
-          console.log("Displayname of auth user is " + authUser.displayName);
         } else {
           return authUser
             .updateProfile({
@@ -72,7 +71,6 @@ function App() {
         setUsername("");
       }
     });
-    if (user != null) console.log("User is not null " + user.displayName);
 
     return () => {
       //perform some cleanup options
@@ -287,8 +285,8 @@ function App() {
             <div className="login_details">
               <h3>Please Login First to upload posts.</h3>
               <h3>
-                If you don't want to register you can use following details :{" "}
-                <br /> EmailId - User@gmail.com <br /> Password - 12345678
+                If you don't want to register you can use following details :
+                <br /> Email Id - User@gmail.com <br /> Password - 12345678
               </h3>
             </div>
           )}
