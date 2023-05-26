@@ -8,7 +8,7 @@ import Modal from "@material-ui/core/Modal";
 import { Button, Avatar } from "@material-ui/core";
 import { Input } from "@material-ui/core";
 import ImageUpload from "./ImageUpload";
-import Hotjar from '@hotjar/browser';
+// import Hotjar from '@hotjar/browser';
 
 
 
