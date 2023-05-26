@@ -8,6 +8,17 @@ import Modal from "@material-ui/core/Modal";
 import { Button, Avatar } from "@material-ui/core";
 import { Input } from "@material-ui/core";
 import ImageUpload from "./ImageUpload";
+import Hotjar from '@hotjar/browser';
+
+const siteId = 3508816;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
+
+// Initializing with `debug` option:
+Hotjar.init(siteId, hotjarVersion, {
+  debug: true
+});
 
 function getModalStyle() {
   const top = 50;
