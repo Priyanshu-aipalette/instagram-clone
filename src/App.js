@@ -81,15 +81,15 @@ function App() {
     };
   }, [user, username]);
 
-  useEffect(()=>{
-    const siteId = 3508816;
-    const hotjarVersion = 6;
+  // useEffect(()=>{
+  //   const siteId = 3508816;
+  //   const hotjarVersion = 6;
     
-    // Initializing with `debug` option:
-    Hotjar.init(siteId, hotjarVersion, {
-      debug: true
-    });
-  },[])
+  //   // Initializing with `debug` option:
+  //   Hotjar.init(siteId, hotjarVersion, {
+  //     debug: true
+  //   });
+  // },[])
 
   useEffect(() => {
     db.collection("posts")
