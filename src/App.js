@@ -93,7 +93,7 @@ function App() {
     // Hotjar.init(siteId, hotjarVersion, {
     //   debug: true
     // });
-  },[])
+  },[email])
 
   useEffect(() => {
     db.collection("posts")
