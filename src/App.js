@@ -8,8 +8,7 @@ import Modal from "@material-ui/core/Modal";
 import { Button, Avatar } from "@material-ui/core";
 import { Input } from "@material-ui/core";
 import ImageUpload from "./ImageUpload";
-// import Hotjar from '@hotjar/browser';
-
+import { hotjar } from 'react-hotjar';
 
 
 function getModalStyle() {
@@ -81,15 +80,19 @@ function App() {
     };
   }, [user, username]);
 
-  // useEffect(()=>{
-  //   const siteId = 3508816;
-  //   const hotjarVersion = 6;
+  useEffect(()=>{
+    const siteId = 3508816;
+    const hotjarVersion = 6;
+
+    hotjar.initialize(siteId, hotjarVersion);
+    hotjar.identify('USER_ID', { email:email });
+
     
-  //   // Initializing with `debug` option:
-  //   Hotjar.init(siteId, hotjarVersion, {
-  //     debug: true
-  //   });
-  // },[])
+    // Initializing with `debug` option:
+    // Hotjar.init(siteId, hotjarVersion, {
+    //   debug: true
+    // });
+  },[])
 
   useEffect(() => {
     db.collection("posts")
