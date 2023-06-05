@@ -226,6 +226,8 @@ function App() {
         {user ? (
           <Button
             onClick={() => {
+              window.hj('Logout Clicked', 7299, {email:'priyanshu@aipalette.com'})
+
               auth.signOut();
             }}
           >
