@@ -90,6 +90,10 @@ function App() {
       });
   }, []);
 
+  // useEffect(()=>{
+  //   hj('event', 'Useffect ran successfully')
+  // },[username])
+
   const signUp = (event) => {
     event.preventDefault();
 
