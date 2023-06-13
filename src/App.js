@@ -45,6 +45,10 @@ function App() {
   const [password, setPassword] = useState("");
   const [user, setUser] = useState("");
 
+  useEffect(()=>{
+    window.zeda.init({ email: 'priyanshu@aipalette.com', name: 'Priyanshu' })
+  },[])
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
